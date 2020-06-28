@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Fira+Sans&display=swap');
+.App{
+  margin: 0 auto ;
+  color: white;
+  display: flex;
+  
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image:url(./img/background.jpg);
+  
 }
+ 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.below{
+  margin: 0 auto ;
+  color: white;
+  width: 200px;
+  align-items: center;
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  border-radius: 15px;
+  
+}
+.column{
+  width: 50 px;
+  color: aliceblue;
+  text-align: right;
+  margin-top:50px;
+  
+   font-family: "Merriweather", sans-serif;
+  font-size: larger;
+  transform:translate(0%,0%);
+  
+
+  
+  
+}
+.time{
+  margin-right: 80px;
+  color:#487eb0 ;
+
+}
+.Date{
+  margin-right: 50px;
+  color:#487eb0 ;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box{
+  
+  left:50%;
+  transform:translate(-0%,20%);
+  background:#353b48;
+  height:40px;
+  border-radius: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-txt{
+  width:130px;
+  margin-top: 8px;
+  margin-left: 15px;
+  background: #353b48;
+  border-radius: 20px;
+  
+}
+.search-btn{
+  width:50px;
+  margin-left:6px;
+  border-radius: 10px;
+  background:#718093 ;
+}
+.news{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+.imagenews{
+  width:350px;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-left: 100px;
+  
+  border: 8px solid;
+  
+  
+
+}
+.titlenews{
+  margin-left: 200px;
+  font-size: x-large;
+  color:#40739e;
+  
+}
+.contentnews{
+
+  margin-top: -160px;
+  margin-left: 600px;
+  font-size:x-large;
+  font-family: sans-serif;
+  color:#487eb0;
+  
+}
+.front{
+  margin-right: 800px;
+  margin-top: -100px;
+  font-size: 80px;
+  font-family: "Merriweather", sans-serif; ;
+  color: #40739e;
 }
