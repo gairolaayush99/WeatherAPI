@@ -19,10 +19,13 @@ class Clock extends Component {
   render() { 
     return (
       <div className="column">
-        <h1 className="time">{this.state.time.toLocaleTimeString()}</h1>
-        <br />
-        <h1 className="Date">{this.state.date.toLocaleDateString()}</h1>
-        <h1 className="front">MADE BY AYUSH</h1>
+        <h1 className="front">Weather Card</h1>
+        <div>
+          <h1 className="time">Time: {this.state.time.toLocaleTimeString()}</h1>
+          <br />
+          <h1 className="Date">Date: {this.state.date.toLocaleDateString()}</h1>
+        </div>
+
         <br />
         <br />
         <br />

@@ -3,11 +3,12 @@
   margin: 0 auto ;
   color: white;
   display: flex;
+
   
   
 }
 body{
-  background-image:url(./img/background.jpg);
+  background-color:#203647 ;
   
 }
  
@@ -28,9 +29,11 @@ body{
   width: 50 px;
   color: aliceblue;
   text-align: right;
+  padding: 50px;
   margin-top:50px;
-  
-   font-family: "Merriweather", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Merriweather", sans-serif;
   font-size: larger;
   transform:translate(0%,0%);
   
@@ -39,20 +42,20 @@ body{
   
 }
 .time{
-  margin-right: 80px;
-  color:#487eb0 ;
+  margin-right: -600px;
+  color:#a79e84;
 
 }
 .Date{
-  margin-right: 50px;
-  color:#487eb0 ;
+  margin-right: -600px;
+  color:#a79e84;
 }
 
 .search-box{
   
   left:50%;
   transform:translate(-0%,20%);
-  background:#353b48;
+  background:#34568b;
   height:40px;
   border-radius: 40px;
 }
@@ -61,52 +64,98 @@ body{
   width:130px;
   margin-top: 8px;
   margin-left: 15px;
-  background: #353b48;
+  background: #34568b;
   border-radius: 20px;
   
 }
 .search-btn{
-  width:50px;
-  margin-left:6px;
-  border-radius: 10px;
-  background:#718093 ;
+  
+  background:#40739e ;
 }
 .news{
   display:flex;
   flex-direction: column;
   justify-content: space-around;
   margin-top: 80px;
+  padding: 50px;
 }
 .imagenews{
   width:350px;
   border-radius: 30px;
   margin-top: 30px;
   margin-left: 100px;
-  
-  border: 8px solid;
+  border: 8px solid #a79e84;
   
   
 
 }
 .titlenews{
+  padding: 10px;
   margin-left: 200px;
   font-size: x-large;
-  color:#40739e;
+  color:#a79e84;
   
 }
 .contentnews{
-
+  padding: 20px;
   margin-top: -160px;
   margin-left: 600px;
   font-size:x-large;
   font-family: sans-serif;
-  color:#487eb0;
+  color:#a79e84;
   
 }
 .front{
-  margin-right: 800px;
-  margin-top: -100px;
-  font-size: 80px;
+
+  
+  font-size: 30px;
   font-family: "Merriweather", sans-serif; ;
-  color: #40739e;
+  color:  #a79e84;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  margin-left: 70px;
+  margin-top: -330px;
+  background-color: #bbb;
+  border-radius: 50%;
+  position: absolute;
+}
+notes-page{
+  width: 100%;
+  min-height: 100vh;
+  color: whitesmoke;
+}
+.notes-page header{
+  min-width: 1320px;
+  min-height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color:#a79e84;
+ background-color: #12232E  ;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.notes-page header .logo{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.order{
+  display: flex;
+  margin-right:100px ;
+  font-size: small;
+  color:#a79e84;
+
+}
+.Headnews{
+ font-size:x-large ;
+ color:#a79e84;
+ display: flex;
+ justify-content: center;
 }

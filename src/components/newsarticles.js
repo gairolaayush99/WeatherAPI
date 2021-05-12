@@ -23,34 +23,40 @@ class Newsarticles extends Component {
   }
   render() {
     console.log(this.state);
-      return (<div className="startnews">
-          {this.state.articles.map((item, index) => { 
-              return (
-                <div className="news">
-                  <a className="titlenews" href={item.url}>
-                    <h2> {item.title}</h2>
-                  </a>
-                  
-                  <img
-                    className="imagenews"
-                    src={item.urlToImage}
-                    alt="description"
-                  />
+    return (
+      <div className="startnews">
+        <div className="Headnews">
+          <h1>Indian News</h1>
+        </div>
 
-                  <p className="contentnews">{item.content}</p>
+        {this.state.articles.map((item, index) => {
+          return (
+            <div className="news">
+              <span class="dot"></span>
+              <a className="titlenews" href={item.url}>
+                <h2> {item.title}</h2>
+              </a>
 
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  
-                </div>
-              );
-          })}
-    </div>);
+              <img
+                className="imagenews"
+                src={item.urlToImage}
+                alt="description"
+              />
+
+              <p className="contentnews">{item.content}</p>
+
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </div>
+          );
+        })}
+      </div>
+    );
   }
 }
 

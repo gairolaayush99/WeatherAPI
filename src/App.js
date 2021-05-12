@@ -4,9 +4,14 @@ import './App.css';
 import WeatherEngine from './components/WeatherCard/Weathercardengine';
 import Clock from './components/clock'
 import News from './components/newsarticles'
+import Nav from './components/Nav'
 function App() {
   return (
     <div>
+      <div className="notes-page">
+        <Nav />
+      </div>
+
       <div>
         <Clock />
         <br />
@@ -15,12 +20,13 @@ function App() {
 
       <div className="App">
         <WeatherEngine location="canada" />
-        <WeatherEngine location="Sydney" />
-        <WeatherEngine location="Dehradun" />
+        <WeatherEngine location="chennai" />
         <WeatherEngine location="alaska" />
+        <WeatherEngine location="delhi" />
         <WeatherEngine location="Minnesota" />
-        <WeatherEngine location="Mongolia" />
+        <WeatherEngine location="Bangalore" />
       </div>
+
       <div className="news">
         <br />
         <br />
